@@ -78,4 +78,11 @@ set "model_py_dir=D:\1python_VOSK"
 - 第一步安装python，注意环境变量
 - winget install ffmpeg  
   - 此处报错了，解决办法是去Microsoft store里面更新“应用安装程序”
+- 右键cmd的标题栏，属性（默认值），关闭**快速编辑模式**
+  - 对cmd卡住的情况有帮助。有时候会卡住，按以下键盘就好了。
+  - 也可以在cmd里面这样
+``` dos
+ @echo off
+ reg add HKEY_CURRENT_USER\Console /v QuickEdit /t REG_DWORD /d 00000000 /f
+```
 - 懒得写了 就这样吧
