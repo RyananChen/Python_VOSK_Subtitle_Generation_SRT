@@ -5,9 +5,7 @@ import sys
 import os
 
 from vosk import Model, KaldiRecognizer, SetLogLevel
-
 SAMPLE_RATE = 16000
-
 SetLogLevel(-1)
 
 # 如果你要自己填写绝对路径，注意python用的是反斜杠
@@ -22,8 +20,6 @@ script_dir = os.path.dirname(os.path.realpath(__file__))
 model_path = os.path.join(script_dir, "model")
 # 把model的路径作为参数填入Model，创建模型对象
 model = Model(model_path)
-
-
 
 
 rec = KaldiRecognizer(model, SAMPLE_RATE)
