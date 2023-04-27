@@ -11,9 +11,10 @@ set "py_script=%model_py_dir%\test_srt.py"
 set "input_dir=%~dp0"
 set "file_names=%input_dir%\视频目录.txt"
 set source="%model_py_dir%\弹窗提示完成.vbs"
-set destination="%~dp0\弹窗提示完成.vbs"
+set destination="%~dp0弹窗提示完成.vbs"
 rem 把弹窗提示完成.vbs复制过来，用来删除脚本运行后的bat和txt文件。并起到提醒完成的作用
-echo 正在从 %source% 复制到 %destination%...
+rem
+echo 正在从 "%source%" 复制到 "%destination%"...
 copy %source% %destination%
 echo 弹窗提示脚本，已拷贝到工作目录下
 
