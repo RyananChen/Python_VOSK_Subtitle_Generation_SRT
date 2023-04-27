@@ -18,13 +18,27 @@ echo 正在从 "%source%" 复制到 "%destination%"...
 copy %source% %destination%
 echo 弹窗提示脚本，已拷贝到工作目录下
 
+rem 这一段注释掉，这一段是用来仅仅转换和bat同一个目录下视频用的。
+rem 下一段是转换和bat同一个目录下以及所有子目录下的视频用的。
+goto start
 rem 将同一个目录下的所有mp4文件批量添加进同一目录下的file_names.txt
 (for %%f in ("%input_dir%\*.mp4") do echo %%~nxf) > "%file_names%"
-
 rem 开始一个一个转换.
 for /f "tokens=*" %%f in (%file_names%) do (
     echo 请不要关闭此窗口,正在转换 %%f ...
     python "%py_script%" "%%~nxf"
+)
+:start
+
+rem 添加所有同目录以及子目录的，mp4文件的绝对路径，到TXT文件中
+pushd "%input_dir%"
+(for /r %%f in (*.mp4) do echo %%~dpnxf) > "%file_names%"
+popd
+
+rem 开始一个一个转换.
+for /f "tokens=*" %%f in (%file_names%) do (
+    echo 请不要关闭此窗口,正在转换 %%f ...
+    python "%py_script%" "%%~dpnxf"
 )
 
 echo Done.
