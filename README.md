@@ -1,7 +1,7 @@
 # **一键批量**生成**多个视频**的**中英文字幕**
 
 ## **用处**
-> 基于python的vosk语言模型，进行**一键批量**的生成**多个视频**的**字幕**，中英文都可以。中文识别率不高。  
+基于python的vosk语言模型，进行**一键批量**的生成**多个视频**的**字幕**，中英文都可以。中文识别率不高。  
 **做来倍速播放视频用的** 
 > >GitHub项目链接：
 > >[GitHub链接](https://github.com/RyananChen/Python_VOSK_Subtitle_Generation_SRT)  
@@ -79,7 +79,7 @@ set "model_py_dir=D:\1python_VOSK"
 - winget install ffmpeg  
   - 此处报错了，解决办法是去Microsoft store里面更新“应用安装程序”
 - 右键cmd的标题栏，属性（默认值），关闭**快速编辑模式**
-  - 对cmd卡住的情况有帮助。有时候会卡住，按以下键盘就好了。
+  - 对cmd卡住的情况有帮助。有时候会卡住，按一下键盘就好了。
   - 也可以在cmd里面这样
 ``` dos
  @echo off
