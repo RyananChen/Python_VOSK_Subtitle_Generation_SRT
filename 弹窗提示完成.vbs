@@ -17,32 +17,6 @@ If response = vbYes Then
 
     ' 删除其他文件和文件夹
     On Error Resume Next
-    fso.DeleteFolder folderPath & "\model_cn", True
-    fileName = folderPath & "\model_cn"
-    If Err.Number = 0 Then
-        filesDeleted = "已删除文件夹：" & fileName & vbNewLine
-    Else
-        Err.Clear
-    End If
-
-
-    fso.DeleteFolder folderPath & "\model", True
-    fileName = folderPath & "\model"
-    If Err.Number = 0 Then
-        filesDeleted = "已删除文件夹：" & fileName & vbNewLine
-    Else
-        Err.Clear
-    End If
-
-     fso.DeleteFolder folderPath & "\__MACOSX", True
-    fileName = folderPath & "\__MACOSX"
-    If Err.Number = 0 Then
-        filesDeleted = filesDeleted & "已删除文件夹：" & fileName & vbNewLine
-    Else
-        Err.Clear
-    End If
-
-
 
      fso.DeleteFile folderPath & "\【复制我】到【中文视频文件夹】双击打开.bat"
     fileName = folderPath & "\【复制我】到【中文视频文件夹】双击打开.bat"
@@ -52,62 +26,8 @@ If response = vbYes Then
         Err.Clear
     End If
 
-    
      fso.DeleteFile folderPath & "\【复制我】到【英文视频文件夹】双击打开.bat"
     fileName = folderPath & "\【复制我】到【英文视频文件夹】双击打开.bat"
-    If Err.Number = 0 Then
-        filesDeleted = filesDeleted & "已删除文件：" & fileName & vbNewLine
-    Else
-        Err.Clear
-    End If
-
-     fso.DeleteFile folderPath & "\方法2Ryan.py"
-    fileName = folderPath & "\方法2Ryan.py"
-    If Err.Number = 0 Then
-        filesDeleted = filesDeleted & "已删除文件：" & fileName & vbNewLine
-    Else
-        Err.Clear
-    End If
-
-
-     fso.DeleteFile folderPath & "\方法2运行这个[有问题].bat"
-    fileName = folderPath & "\方法2运行这个[有问题].bat"
-    If Err.Number = 0 Then
-        filesDeleted = filesDeleted & "已删除文件：" & fileName & vbNewLine
-    Else
-        Err.Clear
-    End If
-
-
-     fso.DeleteFile folderPath & "\test_srt.py"
-    fileName = folderPath & "\test_srt.py"
-    If Err.Number = 0 Then
-        filesDeleted = filesDeleted & "已删除文件：" & fileName & vbNewLine
-    Else
-        Err.Clear
-    End If
-
-
-     fso.DeleteFile folderPath & "\test_srt_cn.py"
-    fileName = folderPath & "\test_srt_cn.py"
-    If Err.Number = 0 Then
-        filesDeleted = filesDeleted & "已删除文件：" & fileName & vbNewLine
-    Else
-        Err.Clear
-    End If
-
-
-     fso.DeleteFile folderPath & "\test_text.py"
-    fileName = folderPath & "\test_text.py"
-    If Err.Number = 0 Then
-        filesDeleted = filesDeleted & "已删除文件：" & fileName & vbNewLine
-    Else
-        Err.Clear
-    End If
-
-
-     fso.DeleteFile folderPath & "\test_text_cn.py"
-    fileName = folderPath & "\test_text_cn.py"
     If Err.Number = 0 Then
         filesDeleted = filesDeleted & "已删除文件：" & fileName & vbNewLine
     Else
@@ -122,17 +42,8 @@ If response = vbYes Then
         Err.Clear
     End If
 
-
      fso.DeleteFile folderPath & "\视频目录.txt"
     fileName = folderPath & "\视频目录.txt"
-    If Err.Number = 0 Then
-        filesDeleted = filesDeleted & "已删除文件：" & fileName & vbNewLine
-    Else
-        Err.Clear
-    End If
-
-     fso.DeleteFile folderPath & "\拷贝模型到目标文件夹.vbs"
-    fileName = folderPath & "\拷贝模型到目标文件夹.vbs"
     If Err.Number = 0 Then
         filesDeleted = filesDeleted & "已删除文件：" & fileName & vbNewLine
     Else

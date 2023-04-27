@@ -1,5 +1,5 @@
 # **一键批量**生成**多个视频**的**中英文字幕**
-* * *
+
 ## **用处**
 > 基于python的vosk语言模型，进行**一键批量**的生成**多个视频**的**字幕**，中英文都可以。中文识别率不高。  
 **做来倍速播放视频用的** 
@@ -7,8 +7,8 @@
 > >[GitHub链接](https://github.com/RyananChen/Python_VOSK_Subtitle_Generation_SRT)  
 > >有帮助的话可以给个**star**
 > >所有文件打包**下载链接**  
-> > 国内:  
-> > GitHub:  
+> > 国内:  [123网盘直链下载](https://www.123pan.com/s/mVTcVv-9oGJ.html)   提取码:RYAN  
+> > GitHub: [Releases链接](https://github.com/RyananChen/Python_VOSK_Subtitle_Generation_SRT/releases/tag/V1.0.0)  
 * * *
 ## **使用说明**
 ---------
@@ -63,7 +63,7 @@ set "model_py_dir=D:\1python_VOSK"
 >把【复制我】到【中文视频文件夹】双击打开.bat 拷贝到**C:\Users\Public\Videos**  
 >然后**双击**.bat文件运行它，它就会开始跑了。
 * * *
-> # 一定要复制出来用，不然可能不小心把自己model给删了
+> # 一定要复制出来用，不然可能不小心把自己给删了
 * * *
 ### **运行结束**
 ---------
