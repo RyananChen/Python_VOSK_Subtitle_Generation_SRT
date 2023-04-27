@@ -3,7 +3,7 @@ CHCP 65001
 setlocal enabledelayedexpansion
 
 rem 只有这个需要设置，这是test_srt_cn.py的路径。填进去即可。
-set "model_py_dir=D:\dailyexe\1python_VOSK"
+set "model_py_dir=D:\dailyexe\1python_VOSK_Github"
 
 rem 如果要用英文字幕生成，把下一行的【test_srt_cn.py】改为【test_srt.py】
 set "py_script=%model_py_dir%\test_srt.py"
