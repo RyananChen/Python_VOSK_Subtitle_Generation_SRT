@@ -46,6 +46,7 @@ if files_exist:
     print("2. 确保你的模型文件路径没有中文和特殊符号，并和.py脚本在同一路径，命名为model_cn") 
     print("##############################################################") 
     print("##############################################################") 
+    print("【正在用联网下载的model转换字幕，请不要关闭窗口】...") 
     try: 
         model = Model(lang=lang1) 
     except Exception as e: 
@@ -56,7 +57,7 @@ if files_exist:
         print("##############################################################") 
 else:
     try: 
-        print("【你在用自己配置正确路径的model】") 
+        print("【正在用自己配置正确路径的model转换字幕，请不要关闭窗口】...") 
         # 把model的路径作为参数填入Model，创建模型对象
         model = Model(model_path) 
     except Exception as e: 
